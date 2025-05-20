@@ -1,0 +1,12 @@
+loss_model: 'vgg_16'
+image_size: 256
+model_path: 'models'
+naming: 'mosaic'
+batch_size: 4
+epoch: 2
+style_image: 'style.jpg'
+style_layers: ['vgg_16/conv1/conv1_2', 'vgg_16/conv2/conv2_2', 'vgg_16/conv3/conv3_3', 'vgg_16/conv4/conv4_3']
+content_layers: ['vgg_16/conv3/conv3_3']
+style_weight: 1e2
+content_weight: 1e0
+tv_weight: 1e-3

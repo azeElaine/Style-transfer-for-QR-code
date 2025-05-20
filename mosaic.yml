@@ -4,7 +4,7 @@ model_path: '/kaggle/input/vgg16/keras/default/1'
 naming: 'mosaic'
 batch_size: 4
 epoch: 2
-style_image: 'style.jpg'
+style_image: 'liying20240351010.png'
 style_layers: ['vgg_16/conv1/conv1_2', 'vgg_16/conv2/conv2_2', 'vgg_16/conv3/conv3_3', 'vgg_16/conv4/conv4_3']
 content_layers: ['vgg_16/conv3/conv3_3']
 style_weight: 1e2

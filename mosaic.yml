@@ -1,6 +1,6 @@
 loss_model: 'vgg_16'
 image_size: 256
-model_path: 'models'
+model_path: '/kaggle/input/vgg16/keras/default/1'
 naming: 'mosaic'
 batch_size: 4
 epoch: 2

@@ -41,7 +41,7 @@ def main(FLAGS):
                 FLAGS.loss_model,
                 is_training=False)
             processed_images = reader.image(FLAGS.batch_size, FLAGS.image_size, FLAGS.image_size,
-                                            'train2014/', image_preprocessing_fn, epochs=FLAGS.epoch)
+                                            '/kaggle/input/best-artworks-of-all-time/images/images/Alfred_Sisley', image_preprocessing_fn, epochs=FLAGS.epoch)
             generated = model.net(processed_images, training=True)
             processed_generated = [image_preprocessing_fn(image, FLAGS.image_size, FLAGS.image_size)
                                    for image in tf.unstack(generated, axis=0, num=FLAGS.batch_size)
